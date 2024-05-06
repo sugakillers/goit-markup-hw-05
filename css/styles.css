@@ -668,6 +668,7 @@ letter-spacing: 0.02em;
 text-align: center;
 color: #2e2f42;
 max-width: 360px;
+margin-bottom: 16px;
 }
 
 .modal-form{
@@ -738,7 +739,7 @@ font-size: 12px;
 line-height: 1.17;
 letter-spacing: 0.04em;
 color: rgba(46, 47, 66, 0.4);
-border-color: 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-comment:focus{
     border-color: #4D5AE5;
@@ -765,6 +766,11 @@ fill: transparent;
 transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 display: inline-flex;
 }
+
+.check-text-span {
+    display: inline-flex;
+}
+
 
 .check-text-link {
     color: #4d5ae5;
