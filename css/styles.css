@@ -643,15 +643,10 @@ cursor: pointer;
     align-items: center;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-close-img {
-    fill: #2e2f42;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
 .modal-close-btn:hover {
     background-color:#404bbf ;
     border: none;
-    fill: #ffffff;
     
 }
 
@@ -659,8 +654,19 @@ cursor: pointer;
 .modal-close-btn:focus {
     background-color: #404bbf;
     border: none;
-    fill: #ffffff ;
 }
+.modal-close-btn:hover .modal-close-img {
+    fill: #ffffff ; }
+
+    .modal-close-btn:focus .modal-close-img {
+        fill: #ffffff ; }
+
+
+.modal-close-img {
+    fill: #2e2f42;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .modal-title {
     font-weight: 500;
 line-height: 1.5;
@@ -751,7 +757,6 @@ font-size: 12px;
 line-height: 1.17;
 letter-spacing: 0.04em;
 color: #8e8f99;
-display: flex;
 align-items: center;
 gap: 8px;
 }
